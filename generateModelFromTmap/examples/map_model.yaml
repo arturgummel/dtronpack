@@ -1,0 +1,39 @@
+node_map: {'1': ChargingPoint, '3': WayPoint1, '5': WayPoint2, '7': WayPoint3, '9': WayPoint4,
+  '11': WayPoint5, '13': WayPoint6, '15': WayPoint7, '17': WayPoint8, '19': WayPoint9,
+  '21': WayPoint10, '23': WayPoint11, '25': WayPoint12, '27': WayPoint13, '29': WayPoint14,
+  '31': WayPoint15, '33': WayPoint16, '35': WayPoint17, '37': WayPoint18, '39': WayPoint19,
+  '41': WayPoint20, '43': WayPoint21, '45': WayPoint22, '47': WayPoint23, '49': WayPoint24,
+  '51': WayPoint25, '53': WayPoint26, '55': WayPoint27, '57': WayPoint28, '59': WayPoint29,
+  '61': WayPoint30}
+nodes:
+  ChargingPoint: {x: 17.0, y: 17.0}
+  WayPoint1: {x: 18.351492, y: 15.117878}
+  WayPoint2: {x: 14.650612, y: 16.331186}
+  WayPoint3: {x: 15.568533, y: 18.31643}
+  WayPoint4: {x: 16.646095, y: 21.344109}
+  WayPoint5: {x: 17.957312, y: 22.658848}
+  WayPoint6: {x: 17.140966, y: 24.045362}
+  WayPoint7: {x: 14.695312, y: 24.977108}
+  WayPoint8: {x: 18.232248, y: 26.857367}
+  WayPoint9: {x: 15.777566, y: 27.76313}
+  WayPoint10: {x: 19.701143, y: 30.90086}
+  WayPoint11: {x: 19.519634, y: 26.91782}
+  WayPoint12: {x: 21.707329, y: 29.051702}
+  WayPoint13: {x: 22.96568, y: 24.658983}
+  WayPoint14: {x: 24.12815, y: 24.189238}
+  WayPoint15: {x: 25.226295, y: 27.470901}
+  WayPoint16: {x: 24.05484, y: 23.087872}
+  WayPoint17: {x: 26.801588, y: 22.70339}
+  WayPoint18: {x: 26.884483, y: 23.106405}
+  WayPoint19: {x: 29.696838, y: 21.982073}
+  WayPoint20: {x: 32.016056, y: 25.160746}
+  WayPoint21: {x: 36.118896, y: 23.609434}
+  WayPoint22: {x: 28.483826, y: 19.072117}
+  WayPoint23: {x: 27.095358, y: 15.354626}
+  WayPoint24: {x: 26.45172, y: 14.084146}
+  WayPoint25: {x: 24.886782, y: 16.702484}
+  WayPoint26: {x: 22.586498, y: 16.88701}
+  WayPoint27: {x: 19.390549, y: 20.055779}
+  WayPoint28: {x: 21.627695, y: 23.524313}
+  WayPoint29: {x: 23.943394, y: 20.600283}
+  WayPoint30: {x: 25.863466, y: 19.440474}

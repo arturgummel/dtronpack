@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nta PUBLIC "-//Uppaal Team//DTD Flat System 1.1//EN" "http://www.it.uu.se/research/group/darts/uppaal/flat-1_2.dtd">
+<nta>
+    <declaration>chan i_goto, o_response; int i_goto_state;</declaration>
+    <template>
+        <name x="5" y="5">robot_map</name>
+        <declaration>// Place local declarations here.</declaration>
+        <location id="id1" x="17" y="17">
+            <name>ChargingPoint</name>
+        </location>
+        <location id="id2">
+            <name>ChargingPoint_Res</name>
+        </location>
+        <location id="id3" x="18" y="15">
+            <name>WayPoint1</name>
+        </location>
+        <location id="id4">
+            <name>WayPoint1_Res</name>
+        </location>
+        <location id="id5" x="14" y="16">
+            <name>WayPoint2</name>
+        </location>
+        <location id="id6">
+            <name>WayPoint2_Res</name>
+        </location>
+        <location id="id7" x="15" y="18">
+            <name>WayPoint3</name>
+        </location>
+        <location id="id8">
+            <name>WayPoint3_Res</name>
+        </location>
+        <location id="id9" x="16" y="21">
+            <name>WayPoint4</name>
+        </location>
+        <location id="id10">
+            <name>WayPoint4_Res</name>
+        </location>
+        <location id="id11" x="17" y="22">
+            <name>WayPoint5</name>
+        </location>
+        <location id="id12">
+            <name>WayPoint5_Res</name>
+        </location>
+        <location id="id13" x="17" y="24">
+            <name>WayPoint6</name>
+        </location>
+        <location id="id14">
+            <name>WayPoint6_Res</name>
+        </location>
+        <location id="id15" x="14" y="24">
+            <name>WayPoint7</name>
+        </location>
+        <location id="id16">
+            <name>WayPoint7_Res</name>
+        </location>
+        <location id="id17" x="18" y="26">
+            <name>WayPoint8</name>
+        </location>
+        <location id="id18">
+            <name>WayPoint8_Res</name>
+        </location>
+        <location id="id19" x="15" y="27">
+            <name>WayPoint9</name>
+        </location>
+        <location id="id20">
+            <name>WayPoint9_Res</name>
+        </location>
+        <location id="id21" x="19" y="30">
+            <name>WayPoint10</name>
+        </location>
+        <location id="id22">
+            <name>WayPoint10_Res</name>
+        </location>
+        <location id="id23" x="19" y="26">
+            <name>WayPoint11</name>
+        </location>
+        <location id="id24">
+            <name>WayPoint11_Res</name>
+        </location>
+        <location id="id25" x="21" y="29">
+            <name>WayPoint12</name>
+        </location>
+        <location id="id26">
+            <name>WayPoint12_Res</name>
+        </location>
+        <location id="id27" x="22" y="24">
+            <name>WayPoint13</name>
+        </location>
+        <location id="id28">
+            <name>WayPoint13_Res</name>
+        </location>
+        <location id="id29" x="24" y="24">
+            <name>WayPoint14</name>
+        </location>
+        <location id="id30">
+            <name>WayPoint14_Res</name>
+        </location>
+        <location id="id31" x="25" y="27">
+            <name>WayPoint15</name>
+        </location>
+        <location id="id32">
+            <name>WayPoint15_Res</name>
+        </location>
+        <location id="id33" x="24" y="23">
+            <name>WayPoint16</name>
+        </location>
+        <location id="id34">
+            <name>WayPoint16_Res</name>
+        </location>
+        <location id="id35" x="26" y="22">
+            <name>WayPoint17</name>
+        </location>
+        <location id="id36">
+            <name>WayPoint17_Res</name>
+        </location>
+        <location id="id37" x="26" y="23">
+            <name>WayPoint18</name>
+        </location>
+        <location id="id38">
+            <name>WayPoint18_Res</name>
+        </location>
+        <location id="id39" x="29" y="21">
+            <name>WayPoint19</name>
+        </location>
+        <location id="id40">
+            <name>WayPoint19_Res</name>
+        </location>
+        <location id="id41" x="32" y="25">
+            <name>WayPoint20</name>
+        </location>
+        <location id="id42">
+            <name>WayPoint20_Res</name>
+        </location>
+        <location id="id43" x="36" y="23">
+            <name>WayPoint21</name>
+        </location>
+        <location id="id44">
+            <name>WayPoint21_Res</name>
+        </location>
+        <location id="id45" x="28" y="19">
+            <name>WayPoint22</name>
+        </location>
+        <location id="id46">
+            <name>WayPoint22_Res</name>
+        </location>
+        <location id="id47" x="27" y="15">
+            <name>WayPoint23</name>
+        </location>
+        <location id="id48">
+            <name>WayPoint23_Res</name>
+        </location>
+        <location id="id49" x="26" y="14">
+            <name>WayPoint24</name>
+        </location>
+        <location id="id50">
+            <name>WayPoint24_Res</name>
+        </location>
+        <location id="id51" x="24" y="16">
+            <name>WayPoint25</name>
+        </location>
+        <location id="id52">
+            <name>WayPoint25_Res</name>
+        </location>
+        <location id="id53" x="22" y="16">
+            <name>WayPoint26</name>
+        </location>
+        <location id="id54">
+            <name>WayPoint26_Res</name>
+        </location>
+        <location id="id55" x="19" y="20">
+            <name>WayPoint27</name>
+        </location>
+        <location id="id56">
+            <name>WayPoint27_Res</name>
+        </location>
+        <location id="id57" x="21" y="23">
+            <name>WayPoint28</name>
+        </location>
+        <location id="id58">
+            <name>WayPoint28_Res</name>
+        </location>
+        <location id="id59" x="23" y="20">
+            <name>WayPoint29</name>
+        </location>
+        <location id="id60">
+            <name>WayPoint29_Res</name>
+        </location>
+        <location id="id61" x="25" y="19">
+            <name>WayPoint30</name>
+        </location>
+        <location id="id62">
+            <name>WayPoint30_Res</name>
+        </location>
+        <init ref="id1"/>
+        <transition>
+            <source ref="id1"/>
+            <target ref="id2"/>
+            <label kind="synchronisation">i_goto!</label>
+            <label kind="assignment">i_goto_state=3</label>
+        </transition>
+        <transition>
+            <source ref="id2"/>
+            <target ref="id3"/>
+            <label kind="synchronisation">o_response?</label>
+        </transition>
+        <transition>
+            <source ref="id3"/>
+            <target ref="id4"/>
+            <label kind="synchronisation">i_goto!</label>
+            <label kind="assignment">i_goto_state=5</label>
+        </transition>
+        <transition>
+            <source ref="id4"/>
+            <target ref="id5"/>
+            <label kind="synchronisation">o_response?</label>
+        </transition>
+        <transition>
+            <source ref="id5"/>
+            <target ref="id6"/>
+            <label kind="synchronisation">i_goto!</label>
+            <label kind="assignment">i_goto_state=7</label>
+        </transition>
+        <transition>
+            <source ref="id6"/>
+            <target ref="id7"/>
+            <label kind="synchronisation">o_response?</label>
+        </transition>
+        <transition>
+            <source ref="id7"/>
+            <target ref="id8"/>
+            <label kind="synchronisation">i_goto!</label>
+            <label kind="assignment">i_goto_state=9</label>
+        </transition>
+        <transition>
+            <source ref="id8"/>
+            <target ref="id9"/>
+            <label kind="synchronisation">o_response?</label>
+        </transition>
+        <transition>
+            <source ref="id9"/>
+            <target ref="id10"/>
+            <label kind="synchronisation">i_goto!</label>
+            <label kind="assignment">i_goto_state=11</label>
+        </transition>
+        <transition>
+            <source ref="id10"/>
+            <target ref="id11"/>
+            <label kind="synchronisation">o_response?</label>
+        </transition>
+        <transition>
+            <source ref="id11"/>
+            <target ref="id12"/>
+            <label kind="synchronisation">i_goto!</label>
+            <label kind="assignment">i_goto_state=13</label>
+        </transition>
+        <transition>
+            <source ref="id12"/>
+            <target ref="id13"/>
+            <label kind="synchronisation">o_response?</label>
+        </transition>
+        <transition>
+            <source ref="id13"/>
+            <target ref="id14"/>
+            <label kind="synchronisation">i_goto!</label>
+            <label kind="assignment">i_goto_state=15</label>
+        </transition>
+        <transition>
+            <source ref="id14"/>
+            <target ref="id15"/>
+            <label kind="synchronisation">o_response?</label>
+        </transition>
+        <transition>
+            <source ref="id15"/>
+            <target ref="id16"/>
+            <label kind="synchronisation">i_goto!</label>
+            <label kind="assignment">i_goto_state=17</label>
+        </transition>
+        <transition>
+            <source ref="id16"/>
+            <target ref="id17"/>
+            <label kind="synchronisation">o_response?</label>
+        </transition>
+        <transition>
+            <source ref="id17"/>
+            <target ref="id18"/>
+            <label kind="synchronisation">i_goto!</label>
+            <label kind="assignment">i_goto_state=19</label>
+        </transition>
+        <transition>
+            <source ref="id18"/>
+            <target ref="id19"/>
+            <label kind="synchronisation">o_response?</label>
+        </transition>
+        <transition>
+            <source ref="id19"/>
+            <target ref="id20"/>
+            <label kind="synchronisation">i_goto!</label>
+            <label kind="assignment">i_goto_state=21</label>
+        </transition>
+        <transition>
+            <source ref="id20"/>
+            <target ref="id21"/>
+            <label kind="synchronisation">o_response?</label>
+        </transition>
+        <transition>
+            <source ref="id21"/>
+            <target ref="id22"/>
+            <label kind="synchronisation">i_goto!</label>
+            <label kind="assignment">i_goto_state=23</label>
+        </transition>
+        <transition>
+            <source ref="id22"/>
+            <target ref="id23"/>
+            <label kind="synchronisation">o_response?</label>
+        </transition>
+        <transition>
+            <source ref="id23"/>
+            <target ref="id24"/>
+            <label kind="synchronisation">i_goto!</label>
+            <label kind="assignment">i_goto_state=25</label>
+        </transition>
+        <transition>
+            <source ref="id24"/>
+            <target ref="id25"/>
+            <label kind="synchronisation">o_response?</label>
+        </transition>
+        <transition>
+            <source ref="id25"/>
+            <target ref="id26"/>
+            <label kind="synchronisation">i_goto!</label>
+            <label kind="assignment">i_goto_state=27</label>
+        </transition>
+        <transition>
+            <source ref="id26"/>
+            <target ref="id27"/>
+            <label kind="synchronisation">o_response?</label>
+        </transition>
+        <transition>
+            <source ref="id27"/>
+            <target ref="id28"/>
+            <label kind="synchronisation">i_goto!</label>
+            <label kind="assignment">i_goto_state=29</label>
+        </transition>
+        <transition>
+            <source ref="id28"/>
+            <target ref="id29"/>
+            <label kind="synchronisation">o_response?</label>
+        </transition>
+        <transition>
+            <source ref="id29"/>
+            <target ref="id30"/>
+            <label kind="synchronisation">i_goto!</label>
+            <label kind="assignment">i_goto_state=31</label>
+        </transition>
+        <transition>
+            <source ref="id30"/>
+            <target ref="id31"/>
+            <label kind="synchronisation">o_response?</label>
+        </transition>
+        <transition>
+            <source ref="id31"/>
+            <target ref="id32"/>
+            <label kind="synchronisation">i_goto!</label>
+            <label kind="assignment">i_goto_state=33</label>
+        </transition>
+        <transition>
+            <source ref="id32"/>
+            <target ref="id33"/>
+            <label kind="synchronisation">o_response?</label>
+        </transition>
+        <transition>
+            <source ref="id33"/>
+            <target ref="id34"/>
+            <label kind="synchronisation">i_goto!</label>
+            <label kind="assignment">i_goto_state=35</label>
+        </transition>
+        <transition>
+            <source ref="id34"/>
+            <target ref="id35"/>
+            <label kind="synchronisation">o_response?</label>
+        </transition>
+        <transition>
+            <source ref="id35"/>
+            <target ref="id36"/>
+            <label kind="synchronisation">i_goto!</label>
+            <label kind="assignment">i_goto_state=37</label>
+        </transition>
+        <transition>
+            <source ref="id36"/>
+            <target ref="id37"/>
+            <label kind="synchronisation">o_response?</label>
+        </transition>
+        <transition>
+            <source ref="id37"/>
+            <target ref="id38"/>
+            <label kind="synchronisation">i_goto!</label>
+            <label kind="assignment">i_goto_state=39</label>
+        </transition>
+        <transition>
+            <source ref="id38"/>
+            <target ref="id39"/>
+            <label kind="synchronisation">o_response?</label>
+        </transition>
+        <transition>
+            <source ref="id39"/>
+            <target ref="id40"/>
+            <label kind="synchronisation">i_goto!</label>
+            <label kind="assignment">i_goto_state=41</label>
+        </transition>
+        <transition>
+            <source ref="id40"/>
+            <target ref="id41"/>
+            <label kind="synchronisation">o_response?</label>
+        </transition>
+        <transition>
+            <source ref="id41"/>
+            <target ref="id42"/>
+            <label kind="synchronisation">i_goto!</label>
+            <label kind="assignment">i_goto_state=43</label>
+        </transition>
+        <transition>
+            <source ref="id42"/>
+            <target ref="id43"/>
+            <label kind="synchronisation">o_response?</label>
+        </transition>
+        <transition>
+            <source ref="id43"/>
+            <target ref="id44"/>
+            <label kind="synchronisation">i_goto!</label>
+            <label kind="assignment">i_goto_state=45</label>
+        </transition>
+        <transition>
+            <source ref="id44"/>
+            <target ref="id45"/>
+            <label kind="synchronisation">o_response?</label>
+        </transition>
+        <transition>
+            <source ref="id45"/>
+            <target ref="id46"/>
+            <label kind="synchronisation">i_goto!</label>
+            <label kind="assignment">i_goto_state=47</label>
+        </transition>
+        <transition>
+            <source ref="id46"/>
+            <target ref="id47"/>
+            <label kind="synchronisation">o_response?</label>
+        </transition>
+        <transition>
+            <source ref="id47"/>
+            <target ref="id48"/>
+            <label kind="synchronisation">i_goto!</label>
+            <label kind="assignment">i_goto_state=49</label>
+        </transition>
+        <transition>
+            <source ref="id48"/>
+            <target ref="id49"/>
+            <label kind="synchronisation">o_response?</label>
+        </transition>
+        <transition>
+            <source ref="id49"/>
+            <target ref="id50"/>
+            <label kind="synchronisation">i_goto!</label>
+            <label kind="assignment">i_goto_state=51</label>
+        </transition>
+        <transition>
+            <source ref="id50"/>
+            <target ref="id51"/>
+            <label kind="synchronisation">o_response?</label>
+        </transition>
+        <transition>
+            <source ref="id51"/>
+            <target ref="id52"/>
+            <label kind="synchronisation">i_goto!</label>
+            <label kind="assignment">i_goto_state=53</label>
+        </transition>
+        <transition>
+            <source ref="id52"/>
+            <target ref="id53"/>
+            <label kind="synchronisation">o_response?</label>
+        </transition>
+        <transition>
+            <source ref="id53"/>
+            <target ref="id54"/>
+            <label kind="synchronisation">i_goto!</label>
+            <label kind="assignment">i_goto_state=61</label>
+        </transition>
+        <transition>
+            <source ref="id54"/>
+            <target ref="id61"/>
+            <label kind="synchronisation">o_response?</label>
+        </transition>
+        <transition>
+            <source ref="id55"/>
+            <target ref="id56"/>
+            <label kind="synchronisation">i_goto!</label>
+            <label kind="assignment">i_goto_state=1</label>
+        </transition>
+        <transition>
+            <source ref="id56"/>
+            <target ref="id1"/>
+            <label kind="synchronisation">o_response?</label>
+        </transition>
+        <transition>
+            <source ref="id57"/>
+            <target ref="id58"/>
+            <label kind="synchronisation">i_goto!</label>
+            <label kind="assignment">i_goto_state=55</label>
+        </transition>
+        <transition>
+            <source ref="id58"/>
+            <target ref="id55"/>
+            <label kind="synchronisation">o_response?</label>
+        </transition>
+        <transition>
+            <source ref="id59"/>
+            <target ref="id60"/>
+            <label kind="synchronisation">i_goto!</label>
+            <label kind="assignment">i_goto_state=57</label>
+        </transition>
+        <transition>
+            <source ref="id60"/>
+            <target ref="id57"/>
+            <label kind="synchronisation">o_response?</label>
+        </transition>
+        <transition>
+            <source ref="id61"/>
+            <target ref="id62"/>
+            <label kind="synchronisation">i_goto!</label>
+            <label kind="assignment">i_goto_state=59</label>
+        </transition>
+        <transition>
+            <source ref="id62"/>
+            <target ref="id59"/>
+            <label kind="synchronisation">o_response?</label>
+        </transition>
+    </template>
+    <template>
+        <name>sut</name>
+        <location id="id3" x="0" y="0"/>
+        <init ref="id3"/>
+        <transition>
+            <source ref="id3"/>
+            <target ref="id3"/>
+            <label kind="synchronisation" x="10" y="-93">i_goto?</label>
+            <nail x="-8" y="-102"/>
+            <nail x="127" y="-51"/>
+        </transition>
+        <transition>
+            <source ref="id3"/>
+            <target ref="id3"/>
+            <label kind="synchronisation" x="-170" y="68">o_response!</label>
+            <nail x="8" y="119"/>
+            <nail x="-119" y="42"/>
+        </transition>
+    </template>
+    <system>
+Process1 = robot_map();
+Process2 = sut();
+system Process1, Process2;</system>
+    <queries/>
+</nta>
