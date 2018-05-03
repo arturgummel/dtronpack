@@ -3,7 +3,7 @@ node:
 	waypoint:
 		17.000000,17.000000,0.010200,0.000000,0.000000,-0.841202,0.540721
 	edges:
-		 WayPoint1, move_base
+		 WayPoint2, move_base
 	vertices:
 		0.250000,0.690000
 		-0.287000,0.690000
@@ -16,7 +16,7 @@ node:
 	waypoint:
 		18.351491,15.117878,0.010200,0.000000,0.000000,0.904797,0.425843
 	edges:
-		 WayPoint2, move_base
+		 WayPoint3, move_base
 	vertices:
 		0.690000,0.287000
 		0.287000,0.690000
@@ -31,7 +31,7 @@ node:
 	waypoint:
 		14.650612,16.331187,0.010200,-0.000000,-0.000000,0.343068,0.939310
 	edges:
-		 WayPoint3, move_base
+		 WayPoint1, move_base
 	vertices:
 		0.690000,0.287000
 		0.287000,0.690000
@@ -46,7 +46,7 @@ node:
 	waypoint:
 		15.568533,18.316429,0.010200,0.000000,0.000000,0.550273,0.834985
 	edges:
-		 WayPoint4, move_base
+		 WayPoint5, move_base
 	vertices:
 		0.690000,0.287000
 		0.287000,0.690000
@@ -61,7 +61,7 @@ node:
 	waypoint:
 		16.646096,21.344108,0.010200,0.000000,0.000000,0.226989,0.973897
 	edges:
-		 WayPoint5, move_base
+		 WayPoint6, move_base
 	vertices:
 		0.690000,0.287000
 		0.287000,0.690000
@@ -76,7 +76,7 @@ node:
 	waypoint:
 		17.957311,22.658847,0.010200,0.000000,0.000000,0.606405,0.795156
 	edges:
-		 WayPoint6, move_base
+		 WayPoint4, move_base
 	vertices:
 		0.690000,0.287000
 		0.287000,0.690000
@@ -91,7 +91,7 @@ node:
 	waypoint:
 		17.140967,24.045363,0.010200,0.000000,0.000000,0.518338,0.855176
 	edges:
-		 WayPoint7, move_base
+		 WayPoint8, move_base
 	vertices:
 		0.690000,0.287000
 		0.287000,0.690000
@@ -106,7 +106,7 @@ node:
 	waypoint:
 		14.695312,24.977108,0.010200,0.000000,0.000000,0.777303,0.629127
 	edges:
-		 WayPoint8, move_base
+		 WayPoint9, move_base
 	vertices:
 		0.690000,0.287000
 		0.287000,0.690000
@@ -121,7 +121,8 @@ node:
 	waypoint:
 		18.232249,26.857366,0.010200,0.000000,0.000000,0.761403,0.648279
 	edges:
-		 WayPoint9, move_base
+		 WayPoint7, move_base
+		 WayPoint11, move_base
 	vertices:
 		0.690000,0.287000
 		0.287000,0.690000
@@ -151,7 +152,7 @@ node:
 	waypoint:
 		19.701144,30.900859,0.010200,-0.000000,-0.000000,0.522314,0.852753
 	edges:
-		 WayPoint11, move_base
+		 WayPoint8, move_base
 	vertices:
 		0.690000,0.287000
 		0.287000,0.690000
@@ -242,6 +243,7 @@ node:
 		24.054840,23.087872,0.010200,0.000000,0.000000,-0.285686,0.958323
 	edges:
 		 WayPoint17, move_base
+		 WayPoint29, move_base
 	vertices:
 		0.690000,0.287000
 		0.287000,0.690000
@@ -287,6 +289,7 @@ node:
 		29.696839,21.982072,0.010200,0.000000,0.000000,-0.724650,0.689117
 	edges:
 		 WayPoint20, move_base
+		 WayPoint22, move_base
 	vertices:
 		0.690000,0.287000
 		0.287000,0.690000
@@ -299,7 +302,7 @@ node:
 node: 
 	WayPoint20
 	waypoint:
-		32.016056,25.160746,0.010200,0.000000,0.000000,0.655098,0.755544
+		31.816056,25.160746,0.010200,0.000000,0.000000,0.655098,0.755544
 	edges:
 		 WayPoint21, move_base
 	vertices:
@@ -347,6 +350,7 @@ node:
 		27.095358,15.354626,0.010200,0.000000,0.000000,-0.278725,0.960371
 	edges:
 		 WayPoint24, move_base
+		 WayPoint25, move_base
 	vertices:
 		0.690000,0.287000
 		0.287000,0.690000
@@ -392,6 +396,8 @@ node:
 		22.586498,16.887011,0.010200,0.000000,0.000000,-0.218299,0.975882
 	edges:
 		 WayPoint30, move_base
+		 WayPoint27, move_base
+		 WayPoint29, move_base
 	vertices:
 		0.690000,0.287000
 		0.287000,0.690000
@@ -406,7 +412,7 @@ node:
 	waypoint:
 		19.390548,20.055779,0.010200,0.000000,0.000000,0.995621,-0.093481
 	edges:
-		 ChargingPoint, docking
+		 ChargingPoint, move_base
 	vertices:
 		0.690000,0.287000
 		0.287000,0.690000
@@ -437,6 +443,7 @@ node:
 		23.943393,20.600283,0.010200,0.000000,0.000000,-0.450745,0.892653
 	edges:
 		 WayPoint28, move_base
+		 WayPoint30, move_base
 	vertices:
 		0.690000,0.287000
 		0.287000,0.690000
