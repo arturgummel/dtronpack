@@ -1,0 +1,16 @@
+node_map: {'1': ChargingPoint, '3': WayPoint1, '5': WayPoint2, '7': WayPoint3, '9': WayPoint4,
+  '11': WayPoint5, '13': WayPoint6, '15': WayPoint7, '17': WayPoint8, '19': WayPoint9,
+  '21': WayPoint10, '23': WayPoint11}
+nodes:
+  ChargingPoint: {x: 31.0, y: 16.0}
+  WayPoint1: {x: 28.7, y: 17.6}
+  WayPoint2: {x: 29.0, y: 17.1}
+  WayPoint3: {x: 32.0, y: 16.9}
+  WayPoint4: {x: 32.1, y: 14.3}
+  WayPoint5: {x: 30.9, y: 14.2}
+  WayPoint6: {x: 27.8, y: 14.1}
+  WayPoint7: {x: 28.0, y: 11.5}
+  WayPoint8: {x: 29.5, y: 10.8}
+  WayPoint9: {x: 31.0, y: 10.2}
+  WayPoint10: {x: 32.6, y: 11.6}
+  WayPoint11: {x: 34.0, y: 15.2}

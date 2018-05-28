@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nta PUBLIC "-//Uppaal Team//DTD Flat System 1.1//EN" "http://www.it.uu.se/research/group/darts/uppaal/flat-1_2.dtd">
+<nta>
+    <declaration>chan i_robot_2_goto, o_robot_2_response; int i_robot_2_goto_state;</declaration>
+    <template>
+        <name x="5" y="5">robot_map</name>
+        <declaration>// Place local declarations here.</declaration>
+        <location id="id1" x="30" y="14">
+            <name>ChargingPoint</name>
+        </location>
+        <location id="id2">
+            <name>ChargingPoint_Res</name>
+        </location>
+        <location id="id3" x="33" y="12">
+            <name>WayPoint1</name>
+        </location>
+        <location id="id4">
+            <name>WayPoint1_Res</name>
+        </location>
+        <location id="id5" x="37" y="13">
+            <name>WayPoint2</name>
+        </location>
+        <location id="id6">
+            <name>WayPoint2_Res</name>
+        </location>
+        <location id="id7" x="36" y="11">
+            <name>WayPoint3</name>
+        </location>
+        <location id="id8">
+            <name>WayPoint3_Res</name>
+        </location>
+        <location id="id9" x="38" y="10">
+            <name>WayPoint4</name>
+        </location>
+        <location id="id10">
+            <name>WayPoint4_Res</name>
+        </location>
+        <location id="id11" x="34" y="10">
+            <name>WayPoint5</name>
+        </location>
+        <location id="id12">
+            <name>WayPoint5_Res</name>
+        </location>
+        <location id="id13" x="33" y="7">
+            <name>WayPoint6</name>
+        </location>
+        <location id="id14">
+            <name>WayPoint6_Res</name>
+        </location>
+        <location id="id15" x="29" y="6">
+            <name>WayPoint7</name>
+        </location>
+        <location id="id16">
+            <name>WayPoint7_Res</name>
+        </location>
+        <location id="id17" x="28" y="4">
+            <name>WayPoint8</name>
+        </location>
+        <location id="id18">
+            <name>WayPoint8_Res</name>
+        </location>
+        <init ref="id1"/>
+        <transition>
+            <source ref="id1"/>
+            <target ref="id2"/>
+            <label kind="synchronisation">i_robot_2_goto!</label>
+            <label kind="assignment">i_robot_2_goto_state=3</label>
+        </transition>
+        <transition>
+            <source ref="id2"/>
+            <target ref="id3"/>
+            <label kind="synchronisation">o_robot_2_response?</label>
+        </transition>
+        <transition>
+            <source ref="id3"/>
+            <target ref="id4"/>
+            <label kind="synchronisation">i_robot_2_goto!</label>
+            <label kind="assignment">i_robot_2_goto_state=5</label>
+        </transition>
+        <transition>
+            <source ref="id4"/>
+            <target ref="id5"/>
+            <label kind="synchronisation">o_robot_2_response?</label>
+        </transition>
+        <transition>
+            <source ref="id5"/>
+            <target ref="id6"/>
+            <label kind="synchronisation">i_robot_2_goto!</label>
+            <label kind="assignment">i_robot_2_goto_state=7</label>
+        </transition>
+        <transition>
+            <source ref="id6"/>
+            <target ref="id7"/>
+            <label kind="synchronisation">o_robot_2_response?</label>
+        </transition>
+        <transition>
+            <source ref="id7"/>
+            <target ref="id8"/>
+            <label kind="synchronisation">i_robot_2_goto!</label>
+            <label kind="assignment">i_robot_2_goto_state=9</label>
+        </transition>
+        <transition>
+            <source ref="id8"/>
+            <target ref="id9"/>
+            <label kind="synchronisation">o_robot_2_response?</label>
+        </transition>
+        <transition>
+            <source ref="id9"/>
+            <target ref="id10"/>
+            <label kind="synchronisation">i_robot_2_goto!</label>
+            <label kind="assignment">i_robot_2_goto_state=11</label>
+        </transition>
+        <transition>
+            <source ref="id10"/>
+            <target ref="id11"/>
+            <label kind="synchronisation">o_robot_2_response?</label>
+        </transition>
+        <transition>
+            <source ref="id11"/>
+            <target ref="id12"/>
+            <label kind="synchronisation">i_robot_2_goto!</label>
+            <label kind="assignment">i_robot_2_goto_state=13</label>
+        </transition>
+        <transition>
+            <source ref="id12"/>
+            <target ref="id13"/>
+            <label kind="synchronisation">o_robot_2_response?</label>
+        </transition>
+        <transition>
+            <source ref="id13"/>
+            <target ref="id14"/>
+            <label kind="synchronisation">i_robot_2_goto!</label>
+            <label kind="assignment">i_robot_2_goto_state=15</label>
+        </transition>
+        <transition>
+            <source ref="id14"/>
+            <target ref="id15"/>
+            <label kind="synchronisation">o_robot_2_response?</label>
+        </transition>
+        <transition>
+            <source ref="id15"/>
+            <target ref="id16"/>
+            <label kind="synchronisation">i_robot_2_goto!</label>
+            <label kind="assignment">i_robot_2_goto_state=17</label>
+        </transition>
+        <transition>
+            <source ref="id16"/>
+            <target ref="id17"/>
+            <label kind="synchronisation">o_robot_2_response?</label>
+        </transition>
+        <transition>
+            <source ref="id17"/>
+            <target ref="id18"/>
+            <label kind="synchronisation">i_robot_2_goto!</label>
+            <label kind="assignment">i_robot_2_goto_state=1</label>
+        </transition>
+        <transition>
+            <source ref="id18"/>
+            <target ref="id1"/>
+            <label kind="synchronisation">o_robot_2_response?</label>
+        </transition>
+    </template>
+    <template>
+        <name>sut</name>
+        <location id="id3" x="0" y="0"/>
+        <init ref="id3"/>
+        <transition>
+            <source ref="id3"/>
+            <target ref="id3"/>
+            <label kind="synchronisation" x="10" y="-93">i_robot_2_goto?</label>
+            <nail x="-8" y="-102"/>
+            <nail x="127" y="-51"/>
+        </transition>
+        <transition>
+            <source ref="id3"/>
+            <target ref="id3"/>
+            <label kind="synchronisation" x="-170" y="68">o_robot_2_response!</label>
+            <nail x="8" y="119"/>
+            <nail x="-119" y="42"/>
+        </transition>
+    </template>
+    <system>
+Process1 = robot_map();
+Process2 = sut();
+system Process1, Process2;</system>
+    <queries/>
+</nta>
